@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://qmywovo3geq4"]
+
+[ext_resource type="Script" uid="uid://dt47p1ktniort" path="res://button.gd" id="1_0fbet"]
+[ext_resource type="Script" uid="uid://22bx4jr8el0r" path="res://button_2.gd" id="2_62e2m"]
+
+[node name="Control" type="Control" unique_id=138795496]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="." unique_id=1586882462]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 44.0
+offset_right = 839.0
+offset_bottom = 213.0
+text = "Play?
+"
+script = ExtResource("1_0fbet")
+
+[node name="Button2" type="Button" parent="." unique_id=1926973668]
+layout_mode = 0
+offset_left = 81.0
+offset_top = 227.0
+offset_right = 839.0
+offset_bottom = 414.0
+text = "exit"
+script = ExtResource("2_62e2m")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
+[connection signal="pressed" from="Button2" to="Button2" method="_on_pressed"]

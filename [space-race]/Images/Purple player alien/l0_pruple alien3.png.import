@@ -1,0 +1,27 @@
+[remap]
+
+importer="cubemap_texture"
+type="CompressedCubemap"
+uid="uid://doc5rknv1xaay"
+path="res://.godot/imported/l0_pruple alien3.png-d193bf28b2e057558f29054b9381d34f.ccube"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Images/Purple player alien/l0_pruple alien3.png"
+dest_files=["res://.godot/imported/l0_pruple alien3.png-d193bf28b2e057558f29054b9381d34f.ccube"]
+
+[params]
+
+compress/mode=0
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/uastc_level=0
+compress/rdo_quality_loss=0.0
+compress/hdr_compression=1
+compress/channel_pack=0
+mipmaps/generate=false
+mipmaps/limit=-1
+slices/arrangement=1

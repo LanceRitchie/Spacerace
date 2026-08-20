@@ -2,10 +2,11 @@
 
 [ext_resource type="Script" uid="uid://ceinme55qtgyh" path="res://first.gd" id="1_wtcfe"]
 [ext_resource type="Script" uid="uid://c1jtrbtku18od" path="res://second.gd" id="2_0e48y"]
+[ext_resource type="Script" uid="uid://beqylraqvrd43" path="res://continue.gd" id="3_epypp"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_0e48y"]
 
-[node name="Node2D" type="Node2D" unique_id=478556295]
+[node name="devend" type="Node2D" unique_id=478556295]
 
 [node name="Title" type="Label" parent="." unique_id=690113373]
 offset_right = 1146.0
@@ -21,21 +22,28 @@ offset_right = 2113.0
 offset_bottom = -546.0
 
 [node name="First" type="Label" parent="." unique_id=2041001506]
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = 279.0
+offset_top = 38.0
+offset_right = 851.0
+offset_bottom = 131.0
 script = ExtResource("1_wtcfe")
 
 [node name="Second" type="Label" parent="." unique_id=638779607]
-offset_left = 301.0
-offset_top = 57.0
-offset_right = 497.0
-offset_bottom = 109.0
+offset_left = 282.0
+offset_top = 185.0
+offset_right = 864.0
+offset_bottom = 282.0
 script = ExtResource("2_0e48y")
 
 [node name="Continue" type="Button" parent="." unique_id=2107177199]
-offset_left = 467.0
-offset_top = 127.0
+offset_left = 277.0
+offset_top = 434.0
 offset_right = 854.0
 offset_bottom = 563.0
+text = "Continue?"
+script = ExtResource("3_epypp")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=379561414]
+position = Vector2(578, 320)
+
+[connection signal="pressed" from="Continue" to="Continue" method="_on_pressed"]

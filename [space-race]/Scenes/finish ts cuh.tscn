@@ -1,15 +1,15 @@
-[gd_scene format=3 uid="uid://cbcea63mha8y2"]
+[gd_scene format=3 uid="uid://bevc1hpqciya0"]
 
-[ext_resource type="Texture2D" uid="uid://ba8o6l0sskyxg" path="res://Images/icon.svg" id="1_txve1"]
-[ext_resource type="Script" uid="uid://6h1dxf70jmn0" path="res://Scenes/player_1.gd" id="2_puaei"]
-[ext_resource type="Texture2D" uid="uid://p7l3wwpwfo68" path="res://Images/Purple player alien/Purple player alien-1.png.png" id="3_hjl8w"]
-[ext_resource type="Script" uid="uid://d21yx45jyo008" path="res://Scenes/player_2.gd" id="4_c7jpp"]
-[ext_resource type="Texture2D" uid="uid://blfop4cuo8pov" path="res://Images/Purple player alien/Green player alien single-1.png.png" id="5_ps6j0"]
-[ext_resource type="Script" uid="uid://bx87sb38cdv5v" path="res://Scenes/camera_2d.gd" id="6_0l1il"]
-[ext_resource type="Script" uid="uid://12i1okipnijv" path="res://Scenes/portal.gd" id="7_3d8ms"]
-[ext_resource type="Texture2D" uid="uid://cgy8hr0i43nn6" path="res://Images/nether portal.jpeg" id="8_guu4g"]
-[ext_resource type="Script" uid="uid://la57kfr1vmf4" path="res://Scenes/bulletbombflip.gd" id="10_70g52"]
-[ext_resource type="Texture2D" uid="uid://b1asyqunmqsei" path="res://Images/Bomb enemy-1.png.png" id="11_pujn7"]
+[ext_resource type="Texture2D" uid="uid://ba8o6l0sskyxg" path="res://Images/icon.svg" id="1_tgamc"]
+[ext_resource type="Script" uid="uid://6h1dxf70jmn0" path="res://Scenes/player_1.gd" id="2_vip5c"]
+[ext_resource type="Texture2D" uid="uid://p7l3wwpwfo68" path="res://Images/Purple player alien/Purple player alien-1.png.png" id="3_6xfki"]
+[ext_resource type="Script" uid="uid://d21yx45jyo008" path="res://Scenes/player_2.gd" id="4_w0icg"]
+[ext_resource type="Texture2D" uid="uid://blfop4cuo8pov" path="res://Images/Purple player alien/Green player alien single-1.png.png" id="5_kc2k7"]
+[ext_resource type="Script" uid="uid://bx87sb38cdv5v" path="res://Scenes/camera_2d.gd" id="6_vd8lj"]
+[ext_resource type="Script" uid="uid://12i1okipnijv" path="res://Scenes/portal.gd" id="7_bjnho"]
+[ext_resource type="Texture2D" uid="uid://cgy8hr0i43nn6" path="res://Images/nether portal.jpeg" id="8_50ppf"]
+[ext_resource type="Script" uid="uid://la57kfr1vmf4" path="res://Scenes/bulletbombflip.gd" id="9_fe1ll"]
+[ext_resource type="Texture2D" uid="uid://b1asyqunmqsei" path="res://Images/Bomb enemy-1.png.png" id="10_ad76h"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l11an"]
 size = Vector2(170, 296)
@@ -17,12 +17,12 @@ size = Vector2(170, 296)
 [node name="Node2D" type="Node2D" unique_id=445979900]
 
 [node name="Icon" type="Sprite2D" parent="." unique_id=1682478642]
-position = Vector2(309, 198)
-texture = ExtResource("1_txve1")
+position = Vector2(-101, 219)
+texture = ExtResource("1_tgamc")
 
 [node name="Player1" type="CharacterBody2D" parent="." unique_id=1304397701]
 position = Vector2(-19, 33)
-script = ExtResource("2_puaei")
+script = ExtResource("2_vip5c")
 metadata/_edit_group_ = true
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Player1" unique_id=271193272]
@@ -31,34 +31,34 @@ polygon = PackedVector2Array(0, 30, -70, 30, -70, 20, -100, 20, -100, 10, -110, 
 [node name="Sprite2D" type="Sprite2D" parent="Player1" unique_id=475575120]
 texture_filter = 1
 scale = Vector2(10, 10)
-texture = ExtResource("3_hjl8w")
+texture = ExtResource("3_6xfki")
 
 [node name="Player2" type="CharacterBody2D" parent="." unique_id=2023886833]
 position = Vector2(295, -24)
-script = ExtResource("4_c7jpp")
+script = ExtResource("4_w0icg")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Player2" unique_id=457594373]
 texture_filter = 1
 scale = Vector2(10, 10)
-texture = ExtResource("5_ps6j0")
+texture = ExtResource("5_kc2k7")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Player2" unique_id=29590578]
 show_behind_parent = true
 polygon = PackedVector2Array(70, 30, -70, 30, -70, 20, -100, 20, -100, 10, -110, 10, -110, 0, -120, 0, -120, -10, -110, -10, -110, -20, -70, -20, -70, -30, -50, -30, -50, -50, -40, -50, -40, -70, -20, -70, -20, -80, 20, -80, 20, -70, 40, -70, 40, -50, 50, -50, 50, -30, 70, -30, 70, -20, 110, -20, 110, -10, 120, -10, 120, 0, 110, 0, 110, 10, 100, 10, 100, 20, 70, 20)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=364962449]
-script = ExtResource("6_0l1il")
+script = ExtResource("6_vd8lj")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=544159515]
 
 [node name="Portal" type="Area2D" parent="." unique_id=1021105331]
 position = Vector2(138, 305)
-script = ExtResource("7_3d8ms")
+script = ExtResource("7_bjnho")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Portal" unique_id=853118661]
-texture = ExtResource("8_guu4g")
+texture = ExtResource("8_50ppf")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Portal" unique_id=1892192780]
 shape = SubResource("RectangleShape2D_l11an")
@@ -66,13 +66,13 @@ shape = SubResource("RectangleShape2D_l11an")
 [node name="Bulletbomb1" type="Area2D" parent="." unique_id=1210306906]
 position = Vector2(1862, -96)
 scale = Vector2(-1, 1)
-script = ExtResource("10_70g52")
+script = ExtResource("9_fe1ll")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Bulletbomb1" unique_id=450947880]
 texture_filter = 1
 scale = Vector2(10, 10)
-texture = ExtResource("11_pujn7")
+texture = ExtResource("10_ad76h")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Bulletbomb1" unique_id=1347324231]
 physics_interpolation_mode = 1
@@ -83,13 +83,13 @@ polygon = PackedVector2Array(70, 40, 70, 30, 90, 30, 90, 20, 120, 20, 120, 10, 1
 [node name="Bulletbomb2" type="Area2D" parent="." unique_id=554138996]
 position = Vector2(2382, 251)
 scale = Vector2(-1, 1)
-script = ExtResource("10_70g52")
+script = ExtResource("9_fe1ll")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Bulletbomb2" unique_id=1391382909]
 texture_filter = 1
 scale = Vector2(10, 10)
-texture = ExtResource("11_pujn7")
+texture = ExtResource("10_ad76h")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Bulletbomb2" unique_id=1622305622]
 physics_interpolation_mode = 1
@@ -100,13 +100,13 @@ polygon = PackedVector2Array(70, 40, 70, 30, 90, 30, 90, 20, 120, 20, 120, 10, 1
 [node name="Bulletbomb3" type="Area2D" parent="." unique_id=337083988]
 position = Vector2(3830, -236)
 scale = Vector2(-1, 1)
-script = ExtResource("10_70g52")
+script = ExtResource("9_fe1ll")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Bulletbomb3" unique_id=1015925469]
 texture_filter = 1
 scale = Vector2(10, 10)
-texture = ExtResource("11_pujn7")
+texture = ExtResource("10_ad76h")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Bulletbomb3" unique_id=1014022821]
 physics_interpolation_mode = 1
@@ -117,13 +117,13 @@ polygon = PackedVector2Array(70, 40, 70, 30, 90, 30, 90, 20, 120, 20, 120, 10, 1
 [node name="Bulletbomb4" type="Area2D" parent="." unique_id=893601214]
 position = Vector2(4705, -529)
 scale = Vector2(-1, 1)
-script = ExtResource("10_70g52")
+script = ExtResource("9_fe1ll")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Bulletbomb4" unique_id=1058083895]
 texture_filter = 1
 scale = Vector2(10, 10)
-texture = ExtResource("11_pujn7")
+texture = ExtResource("10_ad76h")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Bulletbomb4" unique_id=583173344]
 physics_interpolation_mode = 1
@@ -134,13 +134,13 @@ polygon = PackedVector2Array(70, 40, 70, 30, 90, 30, 90, 20, 120, 20, 120, 10, 1
 [node name="Bulletbomb5" type="Area2D" parent="." unique_id=1648381146]
 position = Vector2(7528, -409)
 scale = Vector2(-1, 1)
-script = ExtResource("10_70g52")
+script = ExtResource("9_fe1ll")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Bulletbomb5" unique_id=1117853435]
 texture_filter = 1
 scale = Vector2(10, 10)
-texture = ExtResource("11_pujn7")
+texture = ExtResource("10_ad76h")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Bulletbomb5" unique_id=1525857926]
 physics_interpolation_mode = 1
@@ -151,13 +151,13 @@ polygon = PackedVector2Array(70, 40, 70, 30, 90, 30, 90, 20, 120, 20, 120, 10, 1
 [node name="Bulletbomb6" type="Area2D" parent="." unique_id=640818484]
 position = Vector2(3170, -109)
 scale = Vector2(-1, 1)
-script = ExtResource("10_70g52")
+script = ExtResource("9_fe1ll")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Bulletbomb6" unique_id=2005982631]
 texture_filter = 1
 scale = Vector2(10, 10)
-texture = ExtResource("11_pujn7")
+texture = ExtResource("10_ad76h")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Bulletbomb6" unique_id=2049568877]
 physics_interpolation_mode = 1
@@ -168,13 +168,13 @@ polygon = PackedVector2Array(70, 40, 70, 30, 90, 30, 90, 20, 120, 20, 120, 10, 1
 [node name="Bulletbomb7" type="Area2D" parent="." unique_id=631398858]
 position = Vector2(3624, 285)
 scale = Vector2(-1, 1)
-script = ExtResource("10_70g52")
+script = ExtResource("9_fe1ll")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Bulletbomb7" unique_id=1436266935]
 texture_filter = 1
 scale = Vector2(10, 10)
-texture = ExtResource("11_pujn7")
+texture = ExtResource("10_ad76h")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Bulletbomb7" unique_id=1378965939]
 physics_interpolation_mode = 1
@@ -185,13 +185,13 @@ polygon = PackedVector2Array(70, 40, 70, 30, 90, 30, 90, 20, 120, 20, 120, 10, 1
 [node name="Bulletbomb8" type="Area2D" parent="." unique_id=572456289]
 position = Vector2(7060, -49)
 scale = Vector2(-1, 1)
-script = ExtResource("10_70g52")
+script = ExtResource("9_fe1ll")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Bulletbomb8" unique_id=1286758499]
 texture_filter = 1
 scale = Vector2(10, 10)
-texture = ExtResource("11_pujn7")
+texture = ExtResource("10_ad76h")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Bulletbomb8" unique_id=730043034]
 physics_interpolation_mode = 1
@@ -202,13 +202,13 @@ polygon = PackedVector2Array(70, 40, 70, 30, 90, 30, 90, 20, 120, 20, 120, 10, 1
 [node name="Bulletbomb9" type="Area2D" parent="." unique_id=815159882]
 position = Vector2(4945, -76)
 scale = Vector2(-1, 1)
-script = ExtResource("10_70g52")
+script = ExtResource("9_fe1ll")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Bulletbomb9" unique_id=1675217230]
 texture_filter = 1
 scale = Vector2(10, 10)
-texture = ExtResource("11_pujn7")
+texture = ExtResource("10_ad76h")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Bulletbomb9" unique_id=195908775]
 physics_interpolation_mode = 1
@@ -219,13 +219,13 @@ polygon = PackedVector2Array(70, 40, 70, 30, 90, 30, 90, 20, 120, 20, 120, 10, 1
 [node name="Bulletbomb10" type="Area2D" parent="." unique_id=1550641178]
 position = Vector2(6373, 378)
 scale = Vector2(-1, 1)
-script = ExtResource("10_70g52")
+script = ExtResource("9_fe1ll")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Bulletbomb10" unique_id=1330989660]
 texture_filter = 1
 scale = Vector2(10, 10)
-texture = ExtResource("11_pujn7")
+texture = ExtResource("10_ad76h")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Bulletbomb10" unique_id=1363616168]
 physics_interpolation_mode = 1
@@ -236,13 +236,13 @@ polygon = PackedVector2Array(70, 40, 70, 30, 90, 30, 90, 20, 120, 20, 120, 10, 1
 [node name="Bulletbomb11" type="Area2D" parent="." unique_id=2138354300]
 position = Vector2(6079, -209)
 scale = Vector2(-1, 1)
-script = ExtResource("10_70g52")
+script = ExtResource("9_fe1ll")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Bulletbomb11" unique_id=1978844621]
 texture_filter = 1
 scale = Vector2(10, 10)
-texture = ExtResource("11_pujn7")
+texture = ExtResource("10_ad76h")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Bulletbomb11" unique_id=2080959947]
 physics_interpolation_mode = 1
@@ -253,13 +253,13 @@ polygon = PackedVector2Array(70, 40, 70, 30, 90, 30, 90, 20, 120, 20, 120, 10, 1
 [node name="Bulletbomb12" type="Area2D" parent="." unique_id=823508663]
 position = Vector2(5626, 358)
 scale = Vector2(-1, 1)
-script = ExtResource("10_70g52")
+script = ExtResource("9_fe1ll")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Bulletbomb12" unique_id=1830927664]
 texture_filter = 1
 scale = Vector2(10, 10)
-texture = ExtResource("11_pujn7")
+texture = ExtResource("10_ad76h")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Bulletbomb12" unique_id=740432849]
 physics_interpolation_mode = 1

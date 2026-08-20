@@ -11,7 +11,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Button" type="Button" parent="." unique_id=1586882462]
+[node name="startbutton" type="Button" parent="." unique_id=1586882462]
 layout_mode = 0
 offset_left = 80.0
 offset_top = 44.0
@@ -21,7 +21,7 @@ text = "Play?
 "
 script = ExtResource("1_0fbet")
 
-[node name="Button2" type="Button" parent="." unique_id=1926973668]
+[node name="quitbutton" type="Button" parent="." unique_id=1926973668]
 layout_mode = 0
 offset_left = 81.0
 offset_top = 227.0
@@ -30,5 +30,5 @@ offset_bottom = 414.0
 text = "exit"
 script = ExtResource("2_62e2m")
 
-[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
-[connection signal="pressed" from="Button2" to="Button2" method="_on_pressed"]
+[connection signal="pressed" from="startbutton" to="startbutton" method="_on_pressed"]
+[connection signal="pressed" from="quitbutton" to="quitbutton" method="_on_pressed"]

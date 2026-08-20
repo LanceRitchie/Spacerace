@@ -9,7 +9,7 @@ var health = 3
 func take_damage2():
 	health -= 1
 	if health <= 0:
-		queue_free()
+		get_tree().quit()
 
 	
 
@@ -75,5 +75,5 @@ func _on_bulletbomb_12_body_shape_entered(body_rid: RID, body: Node2D, body_shap
 	take_damage2()
 
 func _on_portal_body_entered(body: Node2D) -> void:
-	print("portal entered by, ", body.name, GameData.finish_order)
+	print("portal entered by, ", body.name)
 	body.queue_free()
